@@ -7,13 +7,13 @@ export default function Home() {
       <NavBar />
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center pt-20">
+      <section id="home" className="min-h-screen bg-gradient-to-br from-white to-gray-100 flex items-center justify-center pt-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Welcome!
+          <h1 className="font-inter text-5xl md:text-7xl bg-black mb-6 bg-clip-text text-transparent">
+            Grace Kim
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8">
-            I'm a Computer Science and Cognitive Psychology student at Northeastern University.
+          <p className="font-inter text-xl md:text-2xl text-gray-600 mb-8">
+            Computer Science and Cognitive Psychology student at Northeastern University.
           </p>
           <ScrollToButton targetId="about">
             Learn More
@@ -22,34 +22,16 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="min-h-screen bg-white flex items-center py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section id="about" className="min-h-screen bg-white flex items-center justify-center pt-20">
+        <div className="max-w-4xl mx-auto text-center px-6">
+          <div>
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
               <p className="text-lg text-gray-600 mb-6">
-                I'm currently a third-year student 
+                I'm currently a third-year student from New Jersey, but currently live in Boston. I'm 
+                fascinated about how AI can shape our future along with the creativity and 
+                research behind different UI/UX concepts. 
               </p>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span>Frontend Development</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
-                  <span>UI/UX Design</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
-                  <span>Full-Stack Applications</span>
-                </div>
-              </div>
-            </div>
-            <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-8 h-96 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full mx-auto mb-4"></div>
-                <p className="text-gray-600"> Photo Here</p>
-              </div>
             </div>
           </div>
         </div>

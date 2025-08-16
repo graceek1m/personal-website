@@ -9,7 +9,7 @@ interface ScrollToButtonProps {
 export const ScrollToButton: React.FC<ScrollToButtonProps> = ({ 
   targetId, 
   children, 
-  className = "px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:shadow-lg transition-all duration-200 transform hover:scale-105" 
+  className = "px-8 py-4 bg-gradient-to-r text-black rounded-full hover:shadow-lg transition-all duration-200 transform hover:scale-105" 
 }) => {
   const handleClick = () => {
     const element = document.getElementById(targetId)

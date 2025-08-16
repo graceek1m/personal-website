@@ -71,7 +71,7 @@ export const NavBar = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection('home')}
-            className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:scale-105 transition-transform"
+            className="text-2xl bg-gray-600 font-medium bg-clip-text text-transparent hover:scale-105 transition-transform"
           >
             Grace
           </button>
@@ -82,17 +82,13 @@ export const NavBar = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`px-4 py-2 rounded-full transition-all duration-200 font-medium ${
+                className={`px-4 py-2 transition-all duration-200 font-medium ${
                   activeSection === item.id
-                    ? 'bg-blue-100 text-blue-700 scale-105'
-                    : 'text-gray-600 hover:text-blue-600 hover:bg-gray-50'
+                    ? 'text-black scale-105 underline underline-decoration-1 hover:cursor-pointer'
+                    : 'text-gray-600 hover:text-black hover:bg-gray-50 hover:cursor-pointer'
                 }`}
               >
-                {item.label}
-                {/* Active indicator dot */}
-                {activeSection === item.id && (
-                  <span className="ml-2 w-2 h-2 bg-blue-600 rounded-full inline-block animate-pulse"></span>
-                )}
+                {item.label}      
               </button>
             ))}
           </div>
